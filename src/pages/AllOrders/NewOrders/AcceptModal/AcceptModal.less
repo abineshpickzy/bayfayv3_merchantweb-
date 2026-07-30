@@ -1,0 +1,56 @@
+.accept-order {
+  .ant-modal-content {
+    max-width: max-content;
+    margin: auto;
+
+    .ant-modal-header {
+      .ant-modal-title {
+        font-size: 20px;
+      }
+    }
+    .ant-modal-body {
+      padding: 25px 0 0 0;
+      font-size: 15px;
+
+      .task-assign {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 80px 5px;
+        border-bottom: solid 1px #f0f0f0;
+      }
+
+      .ant-radio-group {
+        font-size: 14px;
+        display: block;
+      }
+
+      .radio-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+        border-bottom: solid 1px #cccccc;
+      }
+    }
+    .ant-modal-footer {
+      display: none;
+    }
+    .ant-switch {
+      border: 1px solid #ccc;
+      background: #fafafa;
+      padding: 11px;
+    }
+
+    .auto-assign {
+      .ant-switch-handle::before {
+        background-color: #1589ff;
+      }
+    }
+    .manual-assign {
+      .ant-switch-handle::before {
+        background-color: #00aa00;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+#AddProductsEdit {
+  .top-action-div {
+    margin-top: 25px;
+    .ant-card-body {
+      padding: 15px;
+    }
+
+    .top-action-div-main-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .ant-menu {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+  }
+  .float-menu-div {
+    position: absolute;
+    z-index: 1000;
+    right: 40px;
+    margin-top: -10px;
+  }
+
+  .ant-menu-root {
+    width: max-content;
+
+    .ant-menu-item {
+      margin: 0;
+      padding: 0 30px;
+      color: #424242;
+    }
+    .ant-menu-item:hover {
+      color: #000;
+    }
+    .ant-menu-item::after {
+      border: none;
+      color: #000;
+    }
+
+    .ant-menu-item-selected {
+      background: none;
+      color: #000;
+    }
+  }
+
+  .products {
+    .ant-row {
+      margin-top: 24px;
+    }
+    .product-detail {
+      max-width: 250px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      border-color: #bfe3ff;
+
+      .ant-card-body {
+        padding: 15px;
+        height: 100%;
+      }
+      .extra-icon-div {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 15px;
+        top: 15px;
+      }
+    }
+  }
+
+  .bottom-floating-menu {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-top: solid 1px #ccc;
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    margin: 15px -27px 0;
+    display: flex;
+    background-color: #ffffff;
+
+    .ant-btn {
+      width: 150px;
+      margin: 0 10px;
+      border-radius: 20px;
+    }
+  }
+
+  input:focus-visible {
+    outline: none;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}

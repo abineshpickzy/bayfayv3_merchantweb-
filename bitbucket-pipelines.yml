@@ -1,0 +1,15 @@
+pipelines:
+   branches:
+     release/prod:
+      - step:
+          name: Deploy to Lightsail
+          deployment: production
+          script:
+           - echo "Deploying to production environment"
+           - apt-get update && apt-get install -y unzip
+           - apt-get install -y openssh-client
+           - pipe: atlassian/ssh-run:0.2.2
+             variables:
+               SSH_USER: 'centos'
+               SERVER: '13.234.144.241'
+               COMMAND: '/home/centos/storeadmindeploy.sh'

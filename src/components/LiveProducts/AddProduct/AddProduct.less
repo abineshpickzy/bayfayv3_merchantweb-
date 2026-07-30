@@ -1,0 +1,118 @@
+#AddProducts {
+  .top-action-div {
+    margin-top: 25px;
+
+    .ant-card-body {
+      padding: 15px;
+    }
+
+    .top-action-div-main-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .products {
+    .ant-row {
+      margin-top: 24px;
+    }
+    .product-detail {
+      max-width: 250px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      border-color: #bfe3ff;
+
+      .ant-card-body {
+        padding: 15px;
+        height: 100%;
+
+        .product-added {
+          padding: 5px 40px;
+          border: solid 1px #ccc;
+          border-radius: 35px;
+          background: #dedede;
+          color: red;
+          line-height: initial;
+        }
+      }
+      .extra-icon-div {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 15px;
+        top: 15px;
+      }
+    }
+  }
+  .bottom-floating-menu {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-top: solid 1px #ccc;
+    position: sticky;
+    bottom: 55px;
+    z-index: 100;
+    background-color: #ffffff;
+
+    .ant-btn {
+      min-width: 150px;
+      margin: 0 10px;
+    }
+  }
+  .bottom-floating-menu.d-none {
+    display: none;
+  }
+  .bottom-floating-menu.d-flex {
+    margin: 15px -27px 0;
+    display: flex;
+  }
+  .ant-menu {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+  }
+  .float-menu-div {
+    position: absolute;
+    z-index: 1000;
+    right: 20px;
+    margin-top: 17px;
+  }
+
+  .ant-menu-root {
+    width: max-content;
+
+    .ant-menu-item {
+      margin: 0;
+      padding: 0 10px !important;
+      color: #424242;
+    }
+    .ant-menu-item:hover {
+      color: #000;
+    }
+    .ant-menu-item::after {
+      border: none;
+      color: #000;
+    }
+
+    .ant-menu-item-selected {
+      background: none;
+      color: #000;
+    }
+  }
+
+  .ant-switch {
+    border: 1px solid #ccc;
+    background: #fafafa;
+    padding: 11px;
+  }
+  .hide-product {
+    .ant-switch-handle::before {
+      background-color: #1589ff;
+    }
+  }
+  .show-product {
+    .ant-switch-handle::before {
+      background-color: #00aa00;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.selected-product-modal {
+  .ant-modal-title {
+    text-align: center;
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+  .ant-modal-content {
+    background-color: #ffffffe3;
+    box-shadow: none;
+  }
+
+  .ant-modal-body {
+    padding: 5px;
+  }
+  .main-content {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // .search-div {
+    //   margin-bottom: 50px;
+    //   width: 50%;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   align-items: center;
+    // }
+
+    .ant-btn {
+      min-width: 150px;
+    }
+  }
+
+  .product-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
+    .product-image-div {
+      margin-bottom: 15px;
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .inputs-field {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 3px 3px;
+      border: solid 1px #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+
+      .inputs-label {
+        font-size: 12px;
+        padding-bottom: 2px;
+        font-weight: 300;
+      }
+      .input-div {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+
+        .inputs {
+          border: none;
+          outline: none;
+          font-size: 15px;
+          width: 100px;
+          text-align: center;
+        }
+        .inputs:focus-visible {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+
+    .action-button-div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}

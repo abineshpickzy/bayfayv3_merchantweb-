@@ -1,0 +1,12 @@
+version: 0.2
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-south-1:675034108238:task-definition/${AWSECS_FAMILY}"
+        LoadBalancerInfo:
+          ContainerName: "${AWSECS_CONTAINER}"
+          ContainerPort: 80
+
+
+
